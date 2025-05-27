@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio dos Numerais em Português</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desafio dos Numerais em Português</h1>
+
+        <div id="difficulty-screen">
+            <h2>Escolha a Dificuldade</h2>
+            <div class="difficulty-options">
+                <button class="difficulty-btn" data-difficulty="easy">Fácil</button>
+                <button class="difficulty-btn" data-difficulty="medium">Médio</button>
+                <button class="difficulty-btn" data-difficulty="hard">Difícil</button>
+            </div>
+            <button id="daily-challenge-btn" class="secondary-btn">Desafio Diário</button>
+            <button id="view-ranking-btn" class="secondary-btn">Ver Ranking</button>
+            <button id="view-achievements-btn" class="secondary-btn">Conquistas</button>
+            <button id="settings-btn" class="secondary-btn">Configurações</button>
+            <button id="study-mode-btn" class="secondary-btn">Modo de Estudo</button>
+        </div>
+
+        <div id="game-container" class="hidden">
+            <div class="game-info">
+                <p id="question-counter">Pergunta 1 de X</p>
+                <p id="streak-counter" class="hidden">Sequência: 0</p>
+                <p id="timer-display" class="hidden">Tempo: --</p>
+                <div id="progress-bar-container">
+                    <div id="progress-bar-fill"></div>
+                </div>
+            </div>
+
+            <div id="question-area">
+                <p id="question-text"></p>
+            </div>
+            <div id="options-area">
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+                <button class="option-btn"></button>
+            </div>
+            <div id="feedback-area"></div>
+            <div class="game-controls">
+                <button id="hint-btn">Dica (<span id="hint-count">3</span>)</button>
+                <button id="fifty-fifty-btn">50/50 (<span id="fifty-fifty-count">1</span>)</button>
+                <button id="next-question-btn">Próxima Pergunta</button>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <h2>Fim de Jogo!</h2>
+            <p id="final-score"></p>
+            <p id="score-message"></p>
+            <button id="restart-btn">Jogar Novamente</button>
+            <button id="return-to-menu-btn" class="secondary-btn">Voltar ao Menu</button>
+        </div>
+
+        <div id="ranking-screen" class="hidden">
+            <h2>Ranking dos Numerais</h2>
+            <div class="ranking-filters">
+                <button class="ranking-filter-btn active-filter" data-difficulty="easy">Fácil</button>
+                <button class="ranking-filter-btn" data-difficulty="medium">Médio</button>
+                <button class="ranking-filter-btn" data-difficulty="hard">Difícil</button>
+                <button class="ranking-filter-btn" data-difficulty="daily">Diário</button>
+            </div>
+            <ul id="ranking-list">
+                </ul>
+            <div class="ranking-actions">
+                <button id="manage-ranking-btn" class="secondary-btn">Gerenciar Ranking</button>
+                <button id="close-ranking-btn" class="secondary-btn">Voltar</button>
+            </div>
+        </div>
+
+        <div id="achievements-screen" class="hidden">
+            <h2>Minhas Conquistas</h2>
+            <ul id="achievements-list">
+                </ul>
+            <button id="close-achievements-btn" class="secondary-btn">Voltar</button>
+        </div>
+
+        <div id="settings-screen" class="hidden">
+            <h2>Configurações</h2>
+            <div class="setting-item">
+                <span>Tema:</span>
+                <select id="theme-select">
+                    <option value="dark">Escuro (Padrão)</option>
+                    <option value="light">Claro</option>
+                    <option value="blue-green">Azul e Verde</option>
+                    <option value="natureza-serena">Natureza Serena</option>
+                    <option value="oceano-profundo">Oceano Profundo</option>
+                    <option value="retro-gamer">Retro Gamer</option>
+                    <option value="cafe-aconchegante">Café Aconchegante</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <span>Modo Temporizado (Jogos Normais):</span>
+                <button id="toggle-timed-mode-btn" class="secondary-btn">Desligado</button>
+            </div>
+            <button id="close-settings-btn" class="secondary-btn">Voltar</button>
+        </div>
+
+        <div id="study-mode-screen" class="hidden">
+            <h2>Modo de Estudo</h2>
+            <div class="study-filters">
+                <select id="study-difficulty-filter">
+                    <option value="all">Todas as Dificuldades</option>
+                    <option value="easy">Fácil</option>
+                    <option value="medium">Médio</option>
+                    <option value="hard">Difícil</option>
+                </select>
+                <input type="text" id="study-search-input" placeholder="Buscar por pergunta ou explicação...">
+            </div>
+            <div id="study-questions-list">
+                </div>
+            <button id="close-study-mode-btn" class="secondary-btn">Voltar</button>
+        </div>
+
+        <div id="name-input-modal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Parabéns! Você entrou no ranking!</h3>
+                <p>Por favor, digite seu nome:</p>
+                <input type="text" id="player-name-input" maxlength="15" placeholder="Seu nome">
+                <button id="save-score-btn">Salvar Pontuação</button>
+                <button id="cancel-save-btn" class="secondary-btn">Cancelar</button>
+            </div>
+        </div>
+
+        <div id="admin-password-modal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Acesso Restrito</h3>
+                <p>Por favor, digite a senha de administrador:</p>
+                <input type="password" id="admin-password-input" placeholder="Senha">
+                <button id="submit-admin-password-btn">Entrar</button>
+                <button id="cancel-admin-login-btn" class="secondary-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
