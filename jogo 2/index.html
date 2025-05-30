@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Desafio dos Numerais em Português</h1>
+        <h1>Quiz dos Guri</h1>
 
         <div id="difficulty-screen">
             <h2>Escolha a Dificuldade</h2>
@@ -18,6 +18,8 @@
                 <button class="difficulty-btn" data-difficulty="hard">Difícil</button>
             </div>
             <button id="daily-challenge-btn" class="secondary-btn">Desafio Diário</button>
+            <p id="daily-challenge-status" class="status-message hidden"></p>
+            <button id="time-attack-btn" class="secondary-btn">Time Attack (2 Min)</button>
             <button id="view-ranking-btn" class="secondary-btn">Ver Ranking</button>
             <button id="view-achievements-btn" class="secondary-btn">Conquistas</button>
             <button id="settings-btn" class="secondary-btn">Configurações</button>
@@ -55,6 +57,7 @@
             <h2>Fim de Jogo!</h2>
             <p id="final-score"></p>
             <p id="score-message"></p>
+            <button id="review-incorrect-btn" class="secondary-btn hidden">Revisar Respostas Incorretas</button>
             <button id="restart-btn">Jogar Novamente</button>
             <button id="return-to-menu-btn" class="secondary-btn">Voltar ao Menu</button>
         </div>
@@ -66,6 +69,7 @@
                 <button class="ranking-filter-btn" data-difficulty="medium">Médio</button>
                 <button class="ranking-filter-btn" data-difficulty="hard">Difícil</button>
                 <button class="ranking-filter-btn" data-difficulty="daily">Diário</button>
+                <button class="ranking-filter-btn" data-difficulty="timeAttack">Time Attack</button>
             </div>
             <ul id="ranking-list">
                 </ul>
@@ -119,6 +123,13 @@
             <button id="close-study-mode-btn" class="secondary-btn">Voltar</button>
         </div>
 
+        <div id="review-screen" class="hidden">
+            <h2>Revisar Respostas Incorretas</h2>
+            <div id="review-questions-list">
+                </div>
+            <button id="close-review-btn" class="secondary-btn">Voltar ao Menu</button>
+        </div>
+
         <div id="name-input-modal" class="modal hidden">
             <div class="modal-content">
                 <h3>Parabéns! Você entrou no ranking!</h3>
@@ -141,6 +152,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

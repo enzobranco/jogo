@@ -1,17 +1,16 @@
 :root {
-    --primary-blue: #0A1C2C; /* Azul muito escuro para o fundo principal */
-    --secondary-blue: #1A3A56; /* Azul um pouco mais claro para elementos */
-    --accent-blue: #3E8DCF; /* Azul vibrante para botões principais */
-    --text-light: #E0E7E9; /* Cor de texto clara para contraste */
-    --text-dark: #A7BCC5; /* Cor de texto mais escura para detalhes */
-    --correct-green: #28a745; /* Verde para correto */
-    --incorrect-red: #dc3545; /* Vermelho para incorreto */
-    --light-bg: #F4F7F6; /* Fundo claro para contrastar com o escuro */
-    --border-color: #3e8dcf; /* Cor da borda para elementos selecionados */
-    --progress-bar-bg: #4a6c8e; /* Fundo da barra de progresso */
+    --primary-blue: #0A1C2C;
+    --secondary-blue: #1A3A56;
+    --accent-blue: #3E8DCF;
+    --text-light: #E0E7E9;
+    --text-dark: #A7BCC5;
+    --correct-green: #28a745;
+    --incorrect-red: #dc3545;
+    --light-bg: #F4F7F6;
+    --border-color: #3e8dcf;
+    --progress-bar-bg: #4a6c8e;
 }
 
-/* Light Theme */
 .light-theme {
     --primary-blue: #F0F4F8;
     --secondary-blue: #FFFFFF;
@@ -25,11 +24,10 @@
     --progress-bar-bg: #cccccc;
 }
 
-/* Blue-Green Theme */
 .blue-green-theme {
-    --primary-blue: #1C3F3E; /* Verde azulado escuro */
-    --secondary-blue: #2A5C5B; /* Verde azulado médio */
-    --accent-blue: #5CE0D8; /* Ciano vibrante */
+    --primary-blue: #1C3F3E;
+    --secondary-blue: #2A5C5B;
+    --accent-blue: #5CE0D8;
     --text-light: #E0FFFE;
     --text-dark: #A7CECD;
     --correct-green: #4CAF50;
@@ -39,110 +37,136 @@
     --progress-bar-bg: #4a6c8e;
 }
 
-/* Add these new theme definitions to your style.css file */
-/* You can place them after the existing .blue-green-theme definition */
-
-/* Natureza Serena Theme */
 .natureza-serena-theme {
-    --primary-blue: #3D402D; /* Dark Olive Green - main background */
-    --secondary-blue: #8F8F7A; /* Lighter Olive/Khaki - container background */
-    --accent-blue: #4F7942; /* Forest Green - buttons, highlights */
-    --text-light: #F0EFE2; /* Cream - main text */
-    --text-dark: #7A6A53; /* Muted Brown - secondary text */
-    --light-bg: #D4CDBA; /* Light Beige - for contrast elements */
-    --border-color: #4F7942; /* Forest Green - for borders */
-    --progress-bar-bg: #6A6A55; /* Darker Khaki - progress bar background */
-    /* Assuming default --correct-green and --incorrect-red are okay */
+    --primary-blue: #3D402D;
+    --secondary-blue: #8F8F7A;
+    --accent-blue: #4F7942;
+    --text-light: #F0EFE2;
+    --text-dark: #7A6A53;
+    --light-bg: #D4CDBA;
+    --border-color: #4F7942;
+    --progress-bar-bg: #6A6A55;
 }
 
-/* Oceano Profundo Theme */
 .oceano-profundo-theme {
-    --primary-blue: #031D44; /* Very Dark Blue - main background */
-    --secondary-blue: #04395E; /* Deep Blue - container background */
-    --accent-blue: #05A8AA; /* Bright Aqua/Teal - buttons, highlights */
-    --text-light: #EFFFFF; /* Light Cyan/Almost White - main text */
-    --text-dark: #718DA9; /* Medium Blue-Gray - secondary text */
-    --light-bg: #D3E0EA; /* Pale Blue - for contrast elements */
-    --border-color: #05A8AA; /* Bright Aqua/Teal - for borders */
-    --progress-bar-bg: #045275; /* Medium Blue - progress bar background */
+    --primary-blue: #031D44;
+    --secondary-blue: #04395E;
+    --accent-blue: #05A8AA;
+    --text-light: #EFFFFF;
+    --text-dark: #718DA9;
+    --light-bg: #D3E0EA;
+    --border-color: #05A8AA;
+    --progress-bar-bg: #045275;
 }
 
-/* Retro Gamer Theme */
 .retro-gamer-theme {
-    --primary-blue: #1E1E2E; /* Near Black/Very Dark Purple - main background */
-    --secondary-blue: #2D2D44; /* Dark Gray/Purple - container background */
-    --accent-blue: #FF00FF; /* Neon Pink/Magenta - buttons, highlights */
-    --text-light: #00FFFF; /* Electric Blue/Cyan - main text */
-    --text-dark: #9F78FF; /* Light Purple - secondary text */
-    --light-bg: #4A4A6A; /* Medium Gray - for contrast elements */
-    --border-color: #FF00FF; /* Neon Pink/Magenta - for borders */
-    --progress-bar-bg: #3E2053; /* Dark Purple - progress bar background */
-    --correct-green: #00FF00; /* Neon Green for correct */
-    --incorrect-red: #FF0000; /* Bright Red for incorrect */
+    --primary-blue: #1E1E2E;
+    --secondary-blue: #2D2D44;
+    --accent-blue: #FF00FF;
+    --text-light: #00FFFF;
+    --text-dark: #9F78FF;
+    --light-bg: #4A4A6A;
+    --border-color: #FF00FF;
+    --progress-bar-bg: #3E2053;
+    --correct-green: #00FF00;
+    --incorrect-red: #FF0000;
 }
 
-/* Café Aconchegante Theme */
 .cafe-aconchegante-theme {
-    --primary-blue: #4A3B31; /* Dark Brown - main background */
-    --secondary-blue: #8C6D52; /* Medium Brown/Tan - container background */
-    --accent-blue: #D9791E; /* Warm Orange - buttons, highlights */
-    --text-light: #F5EFE6; /* Cream/Off-White - main text */
-    --text-dark: #A68A6F; /* Lighter Brown - secondary text */
-    --light-bg: #E8D8C7; /* Light Cream - for contrast elements */
-    --border-color: #D9791E; /* Warm Orange - for borders */
-    --progress-bar-bg: #6B5540; /* Darker Tan - progress bar background */
+    --primary-blue: #4A3B31;
+    --secondary-blue: #8C6D52;
+    --accent-blue: #D9791E;
+    --text-light: #F5EFE6;
+    --text-dark: #A68A6F;
+    --light-bg: #E8D8C7;
+    --border-color: #D9791E;
+    --progress-bar-bg: #6B5540;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--primary-blue); /* Fundo principal escuro */
-    color: var(--text-light); /* Texto claro */
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
+    align-items: center;
     transition: background-color 0.3s ease, color 0.3s ease;
+    overflow: hidden;
 }
 
 .container {
-    background-color: var(--secondary-blue); /* Contêiner com azul secundário */
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: var(--secondary-blue);
+    padding: 20px 30px;
+    border-radius: 0;
+    box-shadow: none;
     text-align: center;
     width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+    overflow-y: auto;
 }
+
+#difficulty-screen,
+#game-container,
+#result-screen,
+#ranking-screen,
+#achievements-screen,
+#settings-screen,
+#study-mode-screen,
+#review-screen {
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#ranking-screen, #achievements-screen, #study-mode-screen, #review-screen {
+    justify-content: flex-start;
+}
+
 
 h1 {
     color: var(--accent-blue);
-    margin-bottom: 25px;
-    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-size: 4.0em;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     transition: color 0.3s ease;
 }
 
 h2 {
     color: var(--text-light);
-    margin-bottom: 20px;
-    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-size: 2.0em;
     transition: color 0.3s ease;
 }
 
-/* Shared Button Styles */
 button {
     background-color: var(--accent-blue);
     color: white;
     border: none;
     padding: 15px 25px;
     border-radius: 8px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
     margin: 5px;
@@ -151,7 +175,7 @@ button {
 }
 
 button:hover {
-    background-color: #5AA0E0; /* Slightly lighter accent blue on hover */
+    background-color: #5AA0E0;
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
@@ -173,18 +197,11 @@ button:active {
     color: white;
 }
 
-/* Difficulty Screen */
-#difficulty-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .difficulty-options {
     display: flex;
     gap: 15px;
-    margin-bottom: 25px;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    margin-bottom: 20px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -192,20 +209,13 @@ button:active {
     min-width: 150px;
 }
 
-/* Game Container */
-#game-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
 .game-info {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 600px;
     margin-bottom: 15px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: var(--text-dark);
     flex-wrap: wrap;
     gap: 10px;
@@ -213,7 +223,7 @@ button:active {
 
 #question-counter, #streak-counter, #timer-display {
     background-color: var(--primary-blue);
-    padding: 8px 15px;
+    padding: 10px 15px;
     border-radius: 6px;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -234,6 +244,7 @@ button:active {
 
 #progress-bar-container {
     width: 100%;
+    max-width: 600px;
     height: 12px;
     background-color: var(--progress-bar-bg);
     border-radius: 6px;
@@ -254,14 +265,15 @@ button:active {
     background-color: var(--primary-blue);
     padding: 25px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
+    max-width: 600px;
     box-sizing: border-box;
     box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 #question-text {
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: var(--text-light);
     margin: 0;
     line-height: 1.4;
@@ -270,9 +282,10 @@ button:active {
 #options-area {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 12px;
     width: 100%;
-    margin-bottom: 20px;
+    max-width: 600px;
+    margin-bottom: 15px;
 }
 
 .option-btn {
@@ -280,7 +293,7 @@ button:active {
     color: var(--text-light);
     border: 2px solid var(--secondary-blue);
     padding: 15px 20px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center;
     word-wrap: break-word;
     white-space: normal;
@@ -316,34 +329,37 @@ button:active {
 
 @keyframes flashGreen {
     0% { background-color: var(--correct-green); }
-    50% { background-color: #4CAF50; } /* Placeholder for lighten */
+    50% { background-color: #4CAF50; }
     100% { background-color: var(--correct-green); }
 }
 
 @keyframes flashRed {
     0% { background-color: var(--incorrect-red); }
-    50% { background-color: #E66775; } /* Placeholder for lighten */
+    50% { background-color: #E66775; }
     100% { background-color: var(--incorrect-red); }
 }
 
 #feedback-area {
     min-height: 30px;
-    font-size: 1.1em;
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
     color: var(--text-light);
+    width: 100%;
+    max-width: 600px;
 }
 
 .game-controls {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    max-width: 600px;
     margin-top: 10px;
     flex-wrap: wrap;
     gap: 10px;
 }
 
 #next-question-btn {
-    margin-left: auto; /* Pushes to the right */
+    margin-left: auto;
 }
 
 #hint-btn, #fifty-fifty-btn {
@@ -360,7 +376,6 @@ button:active {
     color: white;
 }
 
-/* Result Screen */
 #result-screen h2 {
     font-size: 2.8em;
     margin-bottom: 15px;
@@ -373,28 +388,26 @@ button:active {
 }
 
 #final-score {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: bold;
     color: var(--text-light);
     margin-bottom: 10px;
 }
 
 #score-message {
-    font-size: 1.3em;
+    font-size: 1.5em;
     color: var(--text-dark);
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 #restart-btn {
     margin-right: 15px;
 }
 
-/* Hidden Utility Class */
 .hidden {
     display: none !important;
 }
 
-/* Modal Styles */
 .modal {
     position: fixed;
     top: 0;
@@ -406,6 +419,7 @@ button:active {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    padding: 15px;
 }
 
 .modal-content {
@@ -415,29 +429,31 @@ button:active {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
     max-width: 400px;
-    width: 90%;
+    width: 100%;
 }
 
 .modal-content h3 {
     color: var(--accent-blue);
     margin-bottom: 15px;
+    font-size: 1.4em;
 }
 
 .modal-content p {
     color: var(--text-light);
     margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
 .modal-content input[type="text"],
 .modal-content input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 10px;
+    width: calc(100% - 24px);
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid var(--accent-blue);
     border-radius: 6px;
     background-color: var(--primary-blue);
     color: var(--text-light);
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .modal-content input[type="text"]::placeholder,
@@ -449,19 +465,14 @@ button:active {
     margin: 5px;
 }
 
-/* Ranking Screen */
-#ranking-screen, #achievements-screen, #settings-screen, #study-mode-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .ranking-filters {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    max-width: 600px;
 }
 
 .ranking-filter-btn {
@@ -469,7 +480,7 @@ button:active {
     border: 1px solid var(--secondary-blue);
     color: var(--text-light);
     padding: 10px 18px;
-    font-size: 0.95em;
+    font-size: 1.1em;
     min-width: unset;
 }
 
@@ -479,13 +490,15 @@ button:active {
     color: white;
 }
 
-#ranking-list, #achievements-list, #study-questions-list {
+#ranking-list, #achievements-list, #study-questions-list, #review-questions-list {
     list-style: none;
     padding: 0;
     width: 100%;
-    max-height: 400px;
+    max-width: 600px;
+    flex-grow: 1;
+    max-height: calc(100vh - 250px);
     overflow-y: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 1px solid var(--secondary-blue);
     border-radius: 8px;
     background-color: var(--primary-blue);
@@ -493,20 +506,23 @@ button:active {
 
 #ranking-list::-webkit-scrollbar,
 #achievements-list::-webkit-scrollbar,
-#study-questions-list::-webkit-scrollbar {
+#study-questions-list::-webkit-scrollbar,
+#review-questions-list::-webkit-scrollbar {
     width: 8px;
 }
 
 #ranking-list::-webkit-scrollbar-track,
 #achievements-list::-webkit-scrollbar-track,
-#study-questions-list::-webkit-scrollbar-track {
+#study-questions-list::-webkit-scrollbar-track,
+#review-questions-list::-webkit-scrollbar-track {
     background: var(--secondary-blue);
     border-radius: 10px;
 }
 
 #ranking-list::-webkit-scrollbar-thumb,
 #achievements-list::-webkit-scrollbar-thumb,
-#study-questions-list::-webkit-scrollbar-thumb {
+#study-questions-list::-webkit-scrollbar-thumb,
+#review-questions-list::-webkit-scrollbar-thumb {
     background: var(--accent-blue);
     border-radius: 10px;
 }
@@ -517,7 +533,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1em;
+    font-size: 1.15em;
     color: var(--text-light);
 }
 
@@ -536,13 +552,14 @@ button:active {
     margin-top: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    max-width: 600px;
 }
 
 .ranking-actions button {
     margin: 0;
 }
 
-/* Achievement Styles */
 #achievements-list li {
     flex-direction: column;
     align-items: flex-start;
@@ -565,10 +582,10 @@ button:active {
 
 #achievements-list li strong {
     font-size: 1.1em;
-    color: inherit; /* Inherit color from parent (unlocked/locked) */
+    color: inherit;
 }
 #achievements-list li span {
-    font-size: 0.9em;
+    font-size: 0.95em;
     color: var(--text-dark);
 }
 #achievements-list li.unlocked span {
@@ -576,29 +593,29 @@ button:active {
 }
 
 
-/* Settings Screen */
 .setting-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 500px;
     padding: 10px 0;
     border-bottom: 1px solid var(--primary-blue);
     margin-bottom: 10px;
 }
 
 .setting-item span {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: var(--text-light);
 }
 
 .setting-item select {
-    padding: 8px;
+    padding: 10px 12px;
     border-radius: 6px;
     border: 1px solid var(--accent-blue);
     background-color: var(--primary-blue);
     color: var(--text-light);
-    font-size: 1em;
+    font-size: 1.1em;
     cursor: pointer;
     outline: none;
 }
@@ -612,8 +629,8 @@ button:active {
     background-color: var(--primary-blue);
     border: 1px solid var(--accent-blue);
     color: var(--text-light);
-    padding: 8px 15px;
-    font-size: 1em;
+    padding: 10px 18px;
+    font-size: 1.1em;
 }
 
 #toggle-timed-mode-btn.on {
@@ -628,23 +645,23 @@ button:active {
     color: white;
 }
 
-/* Study Mode Screen */
 .study-filters {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
+    max-width: 600px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .study-filters select, .study-filters input {
-    padding: 10px;
+    padding: 12px 15px;
     border-radius: 6px;
     border: 1px solid var(--accent-blue);
     background-color: var(--primary-blue);
     color: var(--text-light);
-    font-size: 1em;
+    font-size: 1.1em;
     flex-grow: 1;
     min-width: 150px;
 }
@@ -661,110 +678,129 @@ button:active {
     text-align: left;
     border: 1px solid var(--primary-blue);
     transition: background-color 0.2s ease;
+    width: 100%;
 }
 
 .study-question-item:hover {
-    background-color: #1A3A56; /* Slightly darker secondary blue */
+    background-color: #1A3A56;
 }
 
 .study-question-item h4 {
     color: var(--accent-blue);
     margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.2em;
+    margin-bottom: 8px;
+    font-size: 1.4em;
 }
 
 .study-question-item p {
     color: var(--text-light);
     margin-bottom: 5px;
-    font-size: 0.95em;
+    font-size: 1.1em;
 }
 
 .study-question-item .explanation {
     font-style: italic;
     color: var(--text-dark);
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 8px;
+    padding-top: 8px;
     border-top: 1px dashed var(--primary-blue);
+}
+.no-results {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-dark);
+    font-size: 1.1em;
+}
+
+.status-message {
+    color: var(--text-dark);
+    font-size: 1.0em;
+    font-style: italic;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 
-/* Responsive Adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 15px;
     }
-
     h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-
-    button {
-        font-size: 1em;
-        padding: 12px 15px;
-    }
-
-    .difficulty-options, .ranking-filters {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .difficulty-btn, .ranking-filter-btn {
-        min-width: unset;
-        width: 100%;
-    }
-
-    .game-controls {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    #next-question-btn {
-        margin-left: unset;
-        width: 100%;
-    }
-
-    #hint-btn, #fifty-fifty-btn {
-        width: 100%;
-    }
-
-    #result-screen h2 {
         font-size: 2.2em;
     }
-    #final-score {
-        font-size: 1.6em;
+    h2 {
+        font-size: 1.8em;
     }
-    #score-message {
-        font-size: 1.2em;
+    button {
+        font-size: 1.1em;
+        padding: 12px 20px;
     }
-
-    #restart-btn {
-        margin-right: 0;
-        margin-bottom: 10px;
-        width: 100%;
+    .difficulty-options {
+        gap: 10px;
     }
-    #return-to-menu-btn {
-        width: 100%;
+    .difficulty-btn {
+        min-width: 130px;
     }
-
-    #manage-ranking-btn, #close-ranking-btn {
-        width: 100%;
-    }
-    .ranking-actions {
-        flex-direction: column;
-    }
-
-    #options-area {
+     #options-area {
         grid-template-columns: 1fr;
     }
+    .game-info {
+        font-size: 1.1em;
+    }
+    #question-text {
+        font-size: 1.4em;
+    }
+    .option-btn {
+        font-size: 1.1em;
+        padding: 12px 18px;
+    }
+}
 
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.0em;
+    }
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .game-info {
+        font-size: 1.0em;
+        flex-direction: column;
+        align-items: center;
+    }
+    #question-text {
+        font-size: 1.3em;
+    }
+    .option-btn {
+        font-size: 1.1em;
+        padding: 12px 15px;
+    }
     .modal-content {
         padding: 20px;
     }
-
-    .study-filters {
+    .ranking-filters {
+        flex-direction: column;
+    }
+    .ranking-filter-btn {
+        width: 100%;
+    }
+    .game-controls {
+        flex-direction: column;
+    }
+    #next-question-btn, #hint-btn, #fifty-fifty-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+     #restart-btn, #return-to-menu-btn, #manage-ranking-btn, #close-ranking-btn {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .ranking-actions {
         flex-direction: column;
     }
 }
