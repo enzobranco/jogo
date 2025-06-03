@@ -804,3 +804,14 @@ button:active {
         flex-direction: column;
     }
 }
+
+/* Estilo para a nova logo */
+#quiz-logo {
+    max-width: 380px; /* Ajuste este valor conforme o tamanho desejado para a logo */
+    height: auto;    /* Mantém a proporção da imagem */
+    margin-top: 5px; /* Added some top margin */
+    margin-bottom: 5px; /* Espaçamento abaixo da logo, similar ao h1 original */
+    display: block;     /* Para centralizar a imagem, se necessário */
+    margin-left: auto;  /* Para centralizar a imagem */
+    margin-right: auto; /* Para centralizar a imagem */
+}
