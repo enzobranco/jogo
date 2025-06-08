@@ -137,7 +137,8 @@ body {
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 1rem;
 }
 
 #ranking-screen, #achievements-screen, #study-mode-screen, #review-screen {
@@ -147,15 +148,16 @@ body {
 
 h1 {
     color: var(--accent-blue);
-    margin-bottom: 20px;
-    font-size: 4.0em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 3.8em;
+    margin-top: 1rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     transition: color 0.3s ease;
 }
 
 h2 {
     color: var(--text-light);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 2.0em;
     transition: color 0.3s ease;
 }
@@ -189,7 +191,7 @@ button:active {
     background-color: var(--secondary-blue);
     border: 1px solid var(--accent-blue);
     color: var(--text-light);
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .secondary-btn:hover {
@@ -200,7 +202,7 @@ button:active {
 .difficulty-options {
     display: flex;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -727,7 +729,7 @@ button:active {
         padding: 15px;
     }
     h1 {
-        font-size: 2.2em;
+        font-size: 3.0em;
     }
     h2 {
         font-size: 1.8em;
@@ -760,7 +762,7 @@ button:active {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 2.0em;
+        font-size: 2.5em;
     }
     h2 {
         font-size: 1.6em;
@@ -803,15 +805,4 @@ button:active {
     .ranking-actions {
         flex-direction: column;
     }
-}
-
-/* Estilo para a nova logo */
-#quiz-logo {
-    max-width: 380px; /* Ajuste este valor conforme o tamanho desejado para a logo */
-    height: auto;    /* Mantém a proporção da imagem */
-    margin-top: 5px; /* Added some top margin */
-    margin-bottom: 5px; /* Espaçamento abaixo da logo, similar ao h1 original */
-    display: block;     /* Para centralizar a imagem, se necessário */
-    margin-left: auto;  /* Para centralizar a imagem */
-    margin-right: auto; /* Para centralizar a imagem */
 }
