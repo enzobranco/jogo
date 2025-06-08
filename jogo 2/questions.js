@@ -1207,4 +1207,4 @@ const gameQuestions = [
         explanation: "Setingentésimo (700º) + trigésimo (30º) + sexto (6º) = 736º.",
         specificHint: "Forma menos comum para 700 (Setecentésimo é mais usual, mas Setingentésimo também existe)."
     }
-];
+]
