@@ -1215,4 +1215,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     checkAndUnlockAchievements();
-})
+});
